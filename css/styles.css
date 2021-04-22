@@ -71,8 +71,6 @@ img {
   display: flex;
   margin-left: 93px;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* 1-й спосіб відступу елементів один від одного */
@@ -87,12 +85,16 @@ img {
   margin-left: 50px;
 }
 
+.site-nav .link-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .list-contact {
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* 1-й спосіб відступу елементів один від одного */
@@ -105,6 +107,12 @@ img {
 
 .list-contact .item + .item {
   margin-left: 50px;
+}
+
+.list-contact .link-header {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-logo {
@@ -173,6 +181,7 @@ img {
 .link-header:focus {
   color: var(--accent-text-color);
 }
+/* *************************************** */
 
 /* Hero */
 .hero-dark-bg-cl {
