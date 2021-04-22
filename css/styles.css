@@ -23,17 +23,102 @@ body {
   color: var(--main-text-color);
 }
 
-/* Навигация */
-.nav-white-bg-cl {
-  background-color: var(--main-white-bg-color);
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* НАВИГАЦИЯ */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 3px solid tomato;
+  background: wheat;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* 1-й спосіб відступу елементів один від одного */
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+/* 2-й спосіб відступу елементів один від одного */
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.list-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* 1-й спосіб відступу елементів один від одного */
+
+/* .list-contact .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+/* 2-й спосіб відступу елементів один від одного */
+
+.list-contact .item + .item {
+  margin-left: 50px;
 }
 
 .link-logo {
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.19;
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-white-bg-cl {
+  background-color: var(--main-white-bg-color);
 }
 
 .logo-web {
