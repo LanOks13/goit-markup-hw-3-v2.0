@@ -11,6 +11,10 @@
   --second-light-bg-color: #f5f4fa;
   --third-light-bg-color: #e5e5e5;
 
+  --padding-section: 94px;
+  --margin-left-li: 30px;
+  --padding-footer: 60px;
+
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
 }
@@ -182,6 +186,7 @@ img {
   color: var(--accent-text-color);
 }
 /* *************************************** */
+/* *************************************** */
 
 /* Hero */
 .hero-dark-bg-cl {
@@ -215,6 +220,8 @@ img {
   cursor: pointer;
 }
 
+/* *************************************** */
+
 /* Особенности */
 
 .title2-hidden-h2,
@@ -243,6 +250,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--alt-text-color);
 }
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-li));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 4 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+}
+
+.section {
+  padding-top: var(--padding-section);
+}
+/* *************************************** */
 
 /* Чем мы занимаемся */
 
