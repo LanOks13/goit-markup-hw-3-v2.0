@@ -13,6 +13,8 @@
 
   --border-header-box: #ececec;
 
+  --shadow-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
   --padding-section: 94px;
   --margin-left-li: 30px;
   --padding-footer: 60px;
@@ -64,8 +66,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid tomato;
-  background: wheat;
+  /* outline: 3px solid tomato;
+  background: rgb(218, 197, 160); */
 }
 
 .header-page {
@@ -291,9 +293,26 @@ img {
 /* *************************************** */
 /* *************************************** */
 
-/* Чем мы занимаемся */
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ - SECTION-WORK */
+
+.our-works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-li));
+}
+
+.our-works .item {
+  flex-basis: calc(100% / 3 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+}
+
+.section-work {
+  padding-bottom: var(--padding-section);
+}
 
 .title2-h2 {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -302,12 +321,41 @@ img {
   color: var(--main-text-color);
 }
 
-/* Наша команда */
+/* *************************************** */
+/* *************************************** */
+
+/* НАША КОМАНДА - OUR TEAM */
 .section-our-team {
   background-color: var(--second-light-bg-color);
 }
 
+.team {
+  padding-bottom: var(--padding-section);
+}
+
+.our-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-li));
+}
+
+.our-team .item {
+  flex-basis: calc(100% / 4 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+  background: var(--main-white-bg-color);
+  box-shadow: var(--shadow-item-box);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .list2-h3 {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
