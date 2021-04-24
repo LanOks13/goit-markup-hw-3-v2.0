@@ -66,8 +66,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 3px solid tomato;
-  background: rgb(218, 197, 160); */
+  outline: 3px solid tomato;
+  background: rgb(119, 140, 185);
 }
 
 .header-page {
@@ -428,6 +428,20 @@ address .item:not(:last-child) {
 /* *************************************** */
 /* *************************************** */
 
+/* PORTFOLIO */
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+  align-items: center;
+}
+
+.portfolio {
+  padding-top: var(--padding-section);
+}
+
 .name-work-h2 {
   font-weight: 700;
   font-size: 18px;
@@ -445,6 +459,10 @@ address .item:not(:last-child) {
 }
 
 .button-portfolio {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -455,8 +473,16 @@ address .item:not(:last-child) {
   cursor: pointer;
 }
 
+.button-list .item + .item {
+  margin-left: 8px;
+}
+
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--accent-text-color);
   color: var(--links-text-color);
+}
+
+.our-projects {
+  display: flex;
 }
