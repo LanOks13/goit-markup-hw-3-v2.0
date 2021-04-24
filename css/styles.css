@@ -67,7 +67,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   outline: 3px solid tomato;
-  background: rgb(119, 140, 185);
+  /* background: rgb(185, 158, 174); */
 }
 
 .header-page {
@@ -430,6 +430,21 @@ address .item:not(:last-child) {
 
 /* PORTFOLIO */
 
+.button-portfolio {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--second-light-bg-color);
+  cursor: pointer;
+}
+
 .button-list {
   display: flex;
   justify-content: center;
@@ -439,7 +454,22 @@ address .item:not(:last-child) {
 }
 
 .portfolio {
-  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+
+.button-list .item + .item {
+  margin-left: 8px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-text-color);
+  color: var(--links-text-color);
+}
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .name-work-h2 {
@@ -458,31 +488,29 @@ address .item:not(:last-child) {
   color: var(--alt-text-color);
 }
 
-.button-portfolio {
-  padding: 6px 22px;
-  border: none;
-  border-radius: 4px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  background-color: var(--second-light-bg-color);
-  cursor: pointer;
-}
-
-.button-list .item + .item {
-  margin-left: 8px;
-}
-
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background-color: var(--accent-text-color);
-  color: var(--links-text-color);
-}
-
 .our-projects {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ?????????????????????????????/ */
+/* ???????????????????????????????????????/ */
+.our-project .item {
+  flex-basis: calc(100% / 3 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.our-team .item {
+  flex-basis: calc(100% / 4 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+  background: var(--main-white-bg-color);
+  box-shadow: var(--shadow-item-box);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
 }
